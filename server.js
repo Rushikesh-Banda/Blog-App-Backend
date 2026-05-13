@@ -14,7 +14,12 @@ config(); //process.env
 const app = exp();
 
 //use cors middleware (merged into one correct config)
-app.use(cors({ origin: "https://blog-app-frontend-phi-liard.vercel.app",}));
+app.use(
+  cors({
+    origin: "https://blog-app-frontend-mz1t0u99l-rushikesh-s-projects2.vercel.app",
+    credentials: true,
+  })
+);
 
 //add body parser middleware
 app.use(exp.json());
